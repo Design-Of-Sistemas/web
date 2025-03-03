@@ -1,8 +1,0 @@
-main {
-  flex: content;
-  display: flex;
-  overflow: auto;
-  background: beige;
-  flex-direction: column;
-  padding: auto;
-}

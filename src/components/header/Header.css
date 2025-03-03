@@ -4,8 +4,6 @@ header {
   justify-content: space-between;
   background: linear-gradient(to top, rgb(24, 180, 228), rgb(9, 58, 163));
   width: 100%;
-  margin: 0;
-  padding: 1rem;
 }
 
 header .menu-btn {
@@ -27,19 +25,23 @@ header .menu-image {
   height: 32px;
 }
 
-header .header-left {
+header #left {
   flex-direction: row;
   flex: content;
   display: flex;
   gap: 15px;
 }
 
-header .links ul {
-  display: flex;
-  flex: content;
-  flex-direction: row;
-  gap: 35px;
-  padding-top: 1px;
+#right {
+  margin-right: 25px;
+  margin-top: 1%;
+  ul {
+    display: flex;
+    flex: content;
+    flex-direction: row;
+    gap: 35px;
+    padding-top: 1px;
+  }
 }
 
 .link {
