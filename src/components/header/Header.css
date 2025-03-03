@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(to top, rgb(24, 180, 228), rgb(9, 58, 163));
+  width: 100%;
+  position: sticky;
+}
+
+.header .menu-btn {
+  background: transparent;
+  border: 0px;
+  cursor: pointer;
+  width: 64px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.menu-btn:hover {
+  box-shadow: black 0 2px 8px 0;
+}
+
+.header .menu-image {
+  width: 32px;
+  height: 32px;
+}
+
+.header .header-left {
+  flex-direction: row;
+  flex: content;
+  display: flex;
+  gap: 15px;
+}
+
+.header .links ul {
+  display: flex;
+  flex: content;
+  flex-direction: row;
+  gap: 35px;
+  padding-top: 15px;
+}
+
+.link {
+  font-size: large;
+  font-weight: bold;
+  list-style: none;
+  a {
+    text-decoration: none;
+    color: beige; /* Colorcito de crous */
+  }
+}

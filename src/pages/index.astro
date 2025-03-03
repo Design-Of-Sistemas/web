@@ -1,11 +1,20 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Card from "../components/card/Card.astro";
+import Layout from "../layouts/Layout.astro";
+import "../shared/global.css";
 ---
 
 <Layout>
-	<Welcome />
+  <Card title="Hello World!">
+    <p>
+      Bienvenido a nuestro sitio web dedicado a los Sistemas de Información.
+      Nuestra misión es brindarte una comprensión integral de cómo los sistemas
+      de información impactan y mejoran los procesos organizacionales,
+      permitiendo la toma de decisiones más eficientes y eficaces. A través de
+      contenidos prácticos y teóricos, profundizamos en temas clave como
+      análisis de sistemas y arquitectura de software. Ya seas estudiante o
+      profesional, nuestro objetivo es proporcionarte el conocimiento necesario
+      para comprender, diseñar y optimizar sistemas de información efectivos.
+    </p>
+  </Card>
 </Layout>
