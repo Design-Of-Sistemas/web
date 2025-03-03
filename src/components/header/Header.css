@@ -2,6 +2,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   background: linear-gradient(to top, rgb(24, 180, 228), rgb(9, 58, 163));
   width: 100%;
 }
@@ -10,6 +11,7 @@ header {
   flex-direction: row;
   flex: content;
   display: flex;
+  align-items: center;
   gap: 15px;
 }
 
