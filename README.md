@@ -46,3 +46,9 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+##Possible errors
+`EPERM: operation not permitted, rmdir '{projectDir}' Stack trace:`
+
+Solution on PowerShell Windows:
+ - `Remove-Item -Recurse -Force node_modules`
