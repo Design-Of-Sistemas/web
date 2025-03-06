@@ -5,25 +5,33 @@ import "./Header.css";
 ---
 
 <header>
+
   <div id="left">
-    <button class="menu-btn" type="button" onclick="console.log('Crous')">
+
+    <button class="menu-btn" type="button" onclick="console.log('Open left menu')">
       <Image src={menu_logo} alt={""} class={"menu-image"} />
     </button>
+
     <a href="/" class="home-link">
-      <h1>Systems Theory</h1>
+      <h1>Teoría de Sistemas</h1>
     </a>
+    <p class="last-updated">Última actualización: 2025-03-06</p>
+
   </div>
+
   <nav id="right" class="links">
+
     <ul>
       <li class="link">
-        <a href="/systems">Systems</a>
+        <a href="/systems">Sistemas</a>
       </li>
       <li class="link">
-        <a href="/systems-analysis">Systems Analysis</a>
+        <a href="/systems-analysis">Análisis de Sistemas</a>
       </li>
       <li class="link">
-        <a href="/systems-design">Systems Design</a>
+        <a href="/systems-design">Diseño de Sistemas</a>
       </li>
+
     </ul>
   </nav>
 </header>
