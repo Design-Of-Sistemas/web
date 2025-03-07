@@ -1,27 +1,67 @@
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-  justify-content: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.site-footer {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem 0;
+}
+
+.footer-content {
+  display: flex;
   align-items: center;
-  padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-  z-index: 1000;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-footer a {
-  color: lightblue;
+.footer-copyright {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.footer-copyright p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footer-copyright b {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.site-footer nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.site-footer nav a {
+  color: #fff;
   text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.25rem 0;
+  transition: all 0.5s ease;
+  position: relative;
 }
 
-.sponsor {
-  flex: content;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  justify-content: end;
-  margin-right: 15px;
+.site-footer nav a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.5s ease;
+}
+
+.site-footer nav a:hover {
+  color: #e0e0e0;
+}
+
+.site-footer nav a:hover:after {
+  width: 100%;
 }
