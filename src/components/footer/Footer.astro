@@ -32,21 +32,4 @@ import "./Footer.css";
       Powered by: <a href="https://astro.build/">Astro</a>
     </p>
   </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const footer = document.getElementById("footer");
-      if (!footer) return;
-
-      const toggleFooterVisibility = () => {
-        const scrolledToTop = window.scrollY === 0;
-        footer.style.visibility = scrolledToTop ? "hidden" : "";
-        footer.checkVisibility();
-      };
-
-      // Ejecutar al inicio para ocultar el footer
-      toggleFooterVisibility();
-
-      window.addEventListener("scroll", toggleFooterVisibility);
-    });
-  </script>
 </footer>
