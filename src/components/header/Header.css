@@ -1,65 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to top, rgb(24, 180, 228), rgb(9, 58, 163));
+  background: linear-gradient(135deg, rgba(21, 32, 47, 0.6), #182f3b),
+    url("../../assets/background.svg");
+  background-size: cover;
+  background-position: center;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  font-size: 1rem;
+  font-weight: 500;
+  list-style: none;
+  position: relative;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.5rem 0;
+  transition: color 0.5s ease;
+}
+
+.nav-item a:hover {
+  color: #f0f0f0;
+}
+
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transition: width 0.5s ease;
+}
+
+.nav-item a:hover::after {
   width: 100%;
 }
 
-#left {
-  flex-direction: row;
-  flex: content;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-#right {
-  margin-right: 25px;
-  margin-top: 1%;
-  ul {
-    display: flex;
-    flex: content;
-    flex-direction: row;
-    gap: 35px;
-    padding-top: 1px;
-  }
-}
-
-.link {
-  font-size: large;
-  font-weight: bold;
-  list-style: none;
-  a {
-    text-decoration: none;
-    color: beige; /* Colorcito de crous */
-  }
-}
-
 .home-link {
-  font-size: larger;
   text-decoration: none;
-  color: beige; /* Colorcito de crous */
+}
+
+.home-link h1 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.5px;
 }
 
 /* MENU */
 
 .menu-btn {
   background: transparent;
-  border: 0px;
+  border: none;
   cursor: pointer;
-  width: 64px;
-  height: 50px;
-  border-radius: 5px;
-  margin-top: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
 }
 
 .menu-btn:hover {
-  box-shadow: black 0 2px 8px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .menu-image {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
